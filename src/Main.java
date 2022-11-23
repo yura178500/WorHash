@@ -13,7 +13,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String input;
 
-         // Название салата
+        // Название салата
         setNameRecipe = " Фруктовый микс";
 
         Recipes[] busket = new Recipes[MAX_CAPACITY];
@@ -97,10 +97,9 @@ public class Main {
         for (countCycles = 0; countCycles <= allСycles; countCycles++) {
             if (countCycles % 2 != 0) {
 
-            int test = (int) Math.floor(Math.random() * (random_end + 1) + 1);
-                            System.out.println(test);
+                int test = (int) Math.floor(Math.random() * (random_end + 1) + 1);
+                System.out.println(test);
             }
-
 
 
         }

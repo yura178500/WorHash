@@ -11,7 +11,7 @@ public class Product extends Exception {
 
 
     private double requiredQuantity;
-    private static BigDecimal price;
+    private BigDecimal price;
 
 
     public boolean equals(Object o) {
@@ -38,7 +38,7 @@ public class Product extends Exception {
                 ", Цена " + price + "кг";
     }
 
-    public  Product  (String name, double requiredQuantity, BigDecimal price) {
+    public Product(String name, double requiredQuantity, BigDecimal price) {
 
         if (!name.isEmpty() && price != null) {
             this.name = name;

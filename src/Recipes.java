@@ -2,6 +2,7 @@
 import java.util.Objects;
 import java.util.Scanner;
 import java.util.Arrays;
+
 public class Recipes {
     public String nameRecipe;
     private int productCount;
@@ -10,8 +11,8 @@ public class Recipes {
     private int position;
 
     public Recipes(int productNumber, int productCount) {
-        this.productNumber =position;
-        this.productCount =count;
+        this.productNumber = position;
+        this.productCount = count;
 
     }
 
@@ -27,29 +28,28 @@ public class Recipes {
         return position;
     }
 
-    public static final String[] PRODUCTS = new String[]{"Груши", "Яблоки", "Киви","Гранат","Огурцы","Апельсин","Банан"};
-    public static final int[] PRICES = new int[]{10, 20, 30,20,15,14,11};
+    public static final String[] PRODUCTS = new String[]{"Груши", "Яблоки", "Киви", "Гранат", "Огурцы", "Апельсин", "Банан"};
+    public static final int[] PRICES = new int[]{10, 20, 30, 20, 15, 14, 11};
 
 
-
-    public void Recipes(int position, int count){
+    public void Recipes(int position, int count) {
         this.position = position;
 
-        if (count>=0) {
+        if (count >= 0) {
             this.count = count;
         }
 
 
     }
 
-    public String getInfo(){
+    public String getInfo() {
         StringBuilder sb = new StringBuilder();
-        sb.append(PRODUCTS[this.position]+" по цене "+ PRICES[this.position]+" за шт. = "+PRICES[this.position]*this.count+" р.");
+        sb.append(PRODUCTS[this.position] + " по цене " + PRICES[this.position] + " за шт. = " + PRICES[this.position] * this.count + " р.");
         return sb.toString();
     }
 
-    public int getSumm(){
-        return PRICES[this.position]*this.count;
+    public int getSumm() {
+        return PRICES[this.position] * this.count;
     }
 
     public String getNameRecipe() {
